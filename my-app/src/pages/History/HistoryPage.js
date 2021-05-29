@@ -6,9 +6,7 @@ let HistoryPage = () => {
     return (
         <div className="row" id="page">
             <div>
-                <div className="col-lg">
-                    <NavBar location="history"/>
-                </div>
+                <NavBar location="history"/>
                 <div className="row" id="main-content">
                     <div className="col-1"></div>
                     <div className="col-10">

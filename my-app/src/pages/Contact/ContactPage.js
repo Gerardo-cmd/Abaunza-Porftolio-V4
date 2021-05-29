@@ -9,9 +9,7 @@ let ContactPage = () => {
     return (
         <div className="row" id="page">
             <div>
-                <div className="col-lg">
-                    <NavBar location="contact"/>
-                </div>
+                <NavBar location="contact"/>
                 <div className="row" id="main-content">
                     <div className="col-1" />
                     <div className="col-10">

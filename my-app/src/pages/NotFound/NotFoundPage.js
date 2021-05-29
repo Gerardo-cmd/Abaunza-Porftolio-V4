@@ -6,9 +6,7 @@ let NotFoundPage = () => {
     return (
         <div className="row" id="page">
             <div>
-                <div className="col-lg">
-                    <NavBar location="?"/>
-                </div>
+                <NavBar location="?"/>
                 <div className="d-flex justify-content-center containerFluid title" id="main-content">
                     <Error />
                 </div>

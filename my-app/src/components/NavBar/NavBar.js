@@ -1,130 +1,155 @@
-import React, {useState} from 'react';
+import React, {useState}  from 'react';
 import {Redirect} from 'react-router-dom';
-import './NavBar.css';
 
-let NavBar = ({ location }) => {
-    /*Below are states that will be used. They are all true/false values.*/
+let Navbar = ({location}) => {
     const [redirectHome, setRedirectHome] = useState(false);
+    const [redirectAbout, setRedirectAbout] = useState(false);
     const [redirectContact, setRedirectContact] = useState(false);
     const [redirectProjects, setRedirectProjects] = useState(false);
-    const [redirectAbout, setRedirectAbout] = useState(false);
-    const [redirectSkills, setRedirectSkills] = useState(false);
     const [redirectHistory, setRedirectHistory] = useState(false);
-
+    const [redirectSkills, setRedirectSkills] = useState(false);
+    const [redirectCourses, setRedirectCourses] = useState(false);
+    
     let stylingHome = {};
     let stylingAbout = {};
-    let stylingSkills = {};
+    let stylingContact = {};
     let stylingProjects = {};
     let stylingHistory = {};
-    let stylingContact = {};
+    let stylingSkills = {};
+    let stylingCourses = {};
+
 
     if (location === 'home') {
         stylingHome = {
-            backgroundColor: 'rgb(9, 16, 29)'
+            color: 'rgb(72, 184, 212)'
         }
     }
     else if (location === 'about') {
         stylingAbout = {
-            backgroundColor: 'rgb(9, 16, 29)'
-        }
-    }
-    else if (location === 'skills') {
-        stylingSkills = {
-            backgroundColor: 'rgb(9, 16, 29)'
+            color: 'rgb(72, 184, 212)'
         }
     }
     else if (location === 'projects') {
         stylingProjects = {
-            backgroundColor: 'rgb(9, 16, 29)'
+            color: 'rgb(72, 184, 212)'
         }
     }
     else if (location === 'history') {
         stylingHistory = {
-            backgroundColor: 'rgb(9, 16, 29)'
+            color: 'rgb(72, 184, 212)'
         }
     }
     else if (location === 'contact') {
         stylingContact = {
-            backgroundColor: 'rgb(9, 16, 29)'
+            color: 'rgb(72, 184, 212)'
         }
     }
-    else {
-
+    else if (location === 'skills') {
+        stylingSkills = {
+            color: 'rgb(72, 184, 212)'
+        }
+    }
+    else if (location === 'courses') {
+        stylingCourses = {
+            color: 'rgb(72, 184, 212)'
+        }
     }
     return (
-        <div className="master">
-            <div id="head" className="row">
-                <h3 style={{paddingTop: '25px', paddingBottom: '10px'}}>NavBar</h3>
-            </div>
-            <a className="option" style={stylingHome} onClick={(e) => {
-                e.preventDefault();
-                setRedirectHome(true);
-                setRedirectContact(false);
-                setRedirectProjects(false);
-                setRedirectAbout(false);
-                setRedirectSkills(false);
-                setRedirectHistory(false);
-            }}>Home</a>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="collapse navbar-collapse container" id="navbarNavAltMarkup">
+                    <div className="navbar-nav" >
+                        <a className="navbar-brand" onClick={(e) => {
+                            e.preventDefault();
+                            setRedirectHome(true);
+                            setRedirectAbout(false);
+                            setRedirectContact(false);
+                            setRedirectProjects(false);
+                            setRedirectHistory(false);
+                            setRedirectSkills(false);
+                            setRedirectCourses(false);
+                        }}>Gerardo Abaunza</a>
+                        <a className="nav-link nav-item active" style={stylingHome} onClick={(e) => {
+                            e.preventDefault();
+                            setRedirectHome(true);
+                            setRedirectAbout(false);
+                            setRedirectContact(false);
+                            setRedirectProjects(false);
+                            setRedirectHistory(false);
+                            setRedirectSkills(false);
+                            setRedirectCourses(false);
+                        }}>Home</a>
+                        <a className="nav-link nav-item active" style={stylingAbout} onClick={(e) => {
+                            e.preventDefault();
+                            setRedirectHome(false);
+                            setRedirectAbout(true);
+                            setRedirectContact(false);
+                            setRedirectProjects(false);
+                            setRedirectHistory(false);
+                            setRedirectSkills(false);
+                            setRedirectCourses(false);
+                        }}>About</a>
+                        <a className="nav-link nav-item active" style={stylingProjects} onClick={(e) => {
+                            e.preventDefault();
+                            setRedirectHome(false);
+                            setRedirectAbout(false);
+                            setRedirectContact(false);
+                            setRedirectProjects(true);
+                            setRedirectHistory(false);
+                            setRedirectSkills(false);
+                            setRedirectCourses(false);                        
+                        }}>Projects</a>
+                        <a className="nav-link nav-item active" style={stylingHistory} onClick={(e) => {
+                            e.preventDefault();
+                            setRedirectHome(false);
+                            setRedirectAbout(false);
+                            setRedirectContact(false);
+                            setRedirectProjects(false);
+                            setRedirectHistory(true);
+                            setRedirectSkills(false);
+                            setRedirectCourses(false);
+                        }}>History</a>
+                        <a className="nav-link nav-item active" style={stylingSkills} onClick={(e) => {
+                            e.preventDefault();
+                            setRedirectHome(false);
+                            setRedirectAbout(false);
+                            setRedirectContact(false);
+                            setRedirectProjects(false);
+                            setRedirectHistory(false);
+                            setRedirectSkills(true);
+                            setRedirectCourses(false);
+                        }}>Skills</a>
+                        <a className="nav-link nav-item active" style={stylingCourses} onClick={(e) => {
+                            e.preventDefault();
+                            setRedirectHome(false);
+                            setRedirectAbout(false);
+                            setRedirectContact(false);
+                            setRedirectProjects(false);
+                            setRedirectHistory(false);
+                            setRedirectSkills(false);
+                            setRedirectCourses(true);
+                        }}>Courses</a>
+                        <a className="nav-link nav-item active" style={stylingContact} onClick={(e) => {
+                            e.preventDefault();
+                            setRedirectHome(false);
+                            setRedirectAbout(false);
+                            setRedirectContact(true);
+                            setRedirectProjects(false);
+                            setRedirectHistory(false);
+                            setRedirectSkills(false);
+                            setRedirectCourses(false);
+                        }}>Contact</a>
+                    </div>
+                </div>
 
-            <a className="option" style={stylingAbout} onClick={(e) => {
-                e.preventDefault();
-                setRedirectHome(false);
-                setRedirectContact(false);
-                setRedirectProjects(false);
-                setRedirectAbout(true);
-                setRedirectSkills(false);
-                setRedirectHistory(false);
-            }}>About</a>
-
-            <a className="option" style={stylingSkills} onClick={(e) => {
-                e.preventDefault();
-                setRedirectHome(false);
-                setRedirectContact(false);
-                setRedirectProjects(false);
-                setRedirectAbout(false);
-                setRedirectSkills(true);
-                setRedirectHistory(false);
-            }}>Skills</a>
-
-            <a className="option" style={stylingProjects} onClick={(e) => {
-                e.preventDefault();
-                setRedirectHome(false);
-                setRedirectContact(false);
-                setRedirectProjects(true);
-                setRedirectAbout(false);
-                setRedirectSkills(false);
-                setRedirectHistory(false);
-            }}>Projects</a>
-
-            <a className="option" style={stylingHistory} onClick={(e) => {
-                e.preventDefault();
-                setRedirectHome(false);
-                setRedirectContact(false);
-                setRedirectProjects(false);
-                setRedirectAbout(false);
-                setRedirectSkills(false);
-                setRedirectHistory(true);
-            }}>History</a>
-
-            <a className="option" style={stylingContact} onClick={(e) => {
-                e.preventDefault();
-                setRedirectHome(false);
-                setRedirectContact(true);
-                setRedirectProjects(false);
-                setRedirectAbout(false);
-                setRedirectSkills(false);
-                setRedirectHistory(false);
-            }}>Contact</a>
-            
-            
-            {redirectHome ? <Redirect to="/" /> : ''}
-            {redirectContact ? <Redirect to='/contact' /> : ''}
-            {redirectProjects ? <Redirect to='/projects' /> : ''}
-            {redirectAbout ? <Redirect to='/about' /> : ''}
-            {redirectSkills ? <Redirect to="/skills_course" /> : ''}
-            {redirectHistory ? <Redirect to='/history' /> : ''}
-        </div>
+                {redirectHome ? <Redirect to="/" /> : ''}
+                {redirectAbout ? <Redirect to='/about' /> : ''}
+                {redirectContact ? <Redirect to='/contact' /> : ''}
+                {redirectProjects ? <Redirect to='/projects' /> : ''}
+                {redirectHistory ? <Redirect to='/history' /> : ''}
+                {redirectSkills ? <Redirect to='/skills' /> : ''}
+                {redirectCourses ? <Redirect to='/courses' /> : ''}
+            </nav>
     )
 }
 
-export default NavBar;
+export default Navbar;

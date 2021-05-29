@@ -11,7 +11,8 @@ import AboutPage from './pages/About/AboutPage.js';
 import ProjectPage from './pages/Projects/ProjectsPage.js';
 import HistoryPage from './pages/History/HistoryPage.js';
 import ContactPage from './pages/Contact/ContactPage.js';
-import Skills_CoursePage from './pages/Skills_Courses/Skills_CoursesPage.js';
+import SkillsPage from './pages/Skills/SkillsPage.js';
+import CoursesPage from './pages/Courses/CoursesPage.js';
 import NotFoundPage from './pages/NotFound/NotFoundPage.js';
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
           <Route exact path="/projects" component={ProjectPage} />
           <Route exact path="/history" component={HistoryPage} />
           <Route exact path="/contact" component={ContactPage} />
-          <Route exact path="/skills_course" component={Skills_CoursePage} />
+          <Route exact path="/skills" component={SkillsPage} />
+          <Route exact path="/courses" component={CoursesPage} />
           <Route path="*" component={NotFoundPage} />
         </Switch>
       </Router>

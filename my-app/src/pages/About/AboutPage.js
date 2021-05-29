@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './AboutPage.css';
 import NavBar from '../../components/NavBar/NavBar.js';
-import Header from '../../components/Header/Header.js';
 let AboutPage = () => {
     return (
         <div className="row" id="page">
@@ -10,7 +9,6 @@ let AboutPage = () => {
                     <NavBar location="about"/>
                 </div>
                 <div className="col-9" style={{marginLeft: '175px'}} id="main-content">
-                    <Header style={{margin: '1px'}} area="About" />
                     <div className="row">
                         <div className="container">
                             <div className="row">

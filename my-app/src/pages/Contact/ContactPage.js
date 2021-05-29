@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import {Redirect} from 'react-router-dom';
+import React from 'react'
 import './ContactPage.css';
 import NavBar from '../../components/NavBar/NavBar.js';
 import Github from './img_github.png';

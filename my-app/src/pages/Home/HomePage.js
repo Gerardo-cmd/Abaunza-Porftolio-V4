@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import './HomePage.css';
-import Header from '../../components/Header/Header.js';
 import NavBar from '../../components/NavBar/NavBar.js';
 let HomePage = () => {
     return (

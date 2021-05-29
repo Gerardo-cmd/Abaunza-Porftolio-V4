@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import {Redirect} from 'react-router-dom';
+import React from 'react'
 import './HistoryPage.css';
 import NavBar from '../../components/NavBar/NavBar.js';
 import Carouselcom from '../../components/Carousel/carousel.js';

@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main-content {
+    margin-top: 0.5rem;
+}
+
+#page {
+    min-height: 100vh;
+}
+
+#title {
+    width: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}

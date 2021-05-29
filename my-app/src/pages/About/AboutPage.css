@@ -1,0 +1,10 @@
+.language:hover {
+    transition: 0.3s ease;
+    font-size: 120%;
+    color: rgb(227, 229, 188);
+    cursor: default;
+}
+
+#page {
+    min-height: 100vh;
+}

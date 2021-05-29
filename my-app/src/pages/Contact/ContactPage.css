@@ -1,0 +1,26 @@
+#page {
+    min-height: 100vh;
+}
+
+.link {
+    color:rgb(231, 231, 231);
+}
+
+.link:hover {
+    text-decoration: none;
+    color:rgb(238, 238, 238);
+}
+
+.img {
+    width: 350px;
+    border-radius: 05%;
+}
+
+.img:hover {
+    transition: 0.5s;
+    width: 375px;
+}
+
+.element:hover {
+    cursor: pointer;
+}

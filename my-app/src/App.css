@@ -1,16 +1,19 @@
 .App {
   text-align: center;
+  color: white;
+  min-height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp3284832.gif");
+  background-repeat: repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .App-header {
@@ -28,11 +31,10 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#main-content {
+  text-align: left;
+  margin-left: 125px;
+  min-height: 100vh;
+  transition: margin-left .5s;
+  padding: 20px;
 }

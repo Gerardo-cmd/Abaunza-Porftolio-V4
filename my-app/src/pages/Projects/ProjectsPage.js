@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './ProjectsPage.css';
 import NavBar from '../../components/NavBar/NavBar.js';
 import hangman from './hangman.png';

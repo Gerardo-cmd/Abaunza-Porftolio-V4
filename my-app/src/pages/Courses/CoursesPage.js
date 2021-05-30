@@ -9,35 +9,73 @@ let CoursesPage = () => {
                 <div className="container" id="main-content">
                     <div className="container">
                         <div className="row">
-                            <h2 className="d-flex justify-content-center">Computer Science courses I have taken at Mason</h2>
+                            <h2 className="d-flex justify-content-center">Computer Science courses I have taken at George Mason</h2>
                             <div className="d-flex justify-content-center col">
                                 <ul>
                                     <br />
-                                    <li>Intro to Computer Science (Python)</li>
+                                    <li>CS 211: Object Oriented Programming
+                                        <ul>
+                                            <li>Language used: Java</li>
+                                        </ul>
+                                    </li>
                                     <br />
-                                    <li>Object Oriented Programming (Java)</li>
+                                    <li>CS 262: Intro to Low-level programming
+                                        <ul>
+                                            <li>Language used: C</li>
+                                        </ul>
+                                    </li>
                                     <br />
-                                    <li>Intro to Low-level programming (C)</li>
+                                    <li>CS 330: Formal Methods and logic
+                                        <ul>
+                                            <li>Language used: N/A</li>
+                                        </ul>
+                                    </li>
                                     <br />
-                                    <li>Formal Methods and logic</li>
+                                    <li>CS 306: Ethics/Law for Computer Science
+                                        <ul>
+                                            <li>Language used: N/A</li>
+                                        </ul>
+                                    </li>
                                     <br />
-                                    <li>Ethics/Law for Computer Science</li>
-                                    <br />
-                                    <li>Data Structures (Java)</li>
+                                    <li>CS 310: Data Structures
+                                        <ul>
+                                            <li>Language used: Java</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="d-flex justify-content-center col">
                                 <ul>
                                     <br />
-                                    <li>Software Engineering</li>
+                                    <li>CS 321: Software Engineering
+                                        <ul>
+                                            <li>Languages used: Javascript/Node.js</li>
+                                        </ul>
+                                    </li>
                                     <br />
-                                    <li>Database Concepts (SQL)</li>
+                                    <li>CS450: Database Concepts
+                                        <ul>
+                                            <li>Language used: SQL</li>
+                                        </ul>
+                                    </li>
                                     <br />
-                                    <li>Computer Systems and Programming (C)</li>
+                                    <li>CS367: Computer Systems and Programming 
+                                        <ul>
+                                            <li>Languages used: C and Assembly</li>
+                                        </ul>
+                                    </li>
                                     <br />
-                                    <li>Intro to Artificial Intelligence</li>
+                                    <li>CS480: Intro to Artificial Intelligence
+                                        <ul>
+                                            <li>Language used: N/A</li>
+                                        </ul>
+                                    </li>
                                     <br />
-                                    <li>Analysis of Algorithms</li>
+                                    <li>CS483: Analysis of Algorithms
+                                        <ul>
+                                            <li>Language used: Java</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

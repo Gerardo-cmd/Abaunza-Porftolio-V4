@@ -22,7 +22,7 @@ let ContactPage = () => {
                                 <a target="_blank" className="link" href="https://github.com/Gerardo-cmd">Github</a>
                                 <br />
                                 <br />
-                                <img className="img d-block w-100 show" src={Github} onClick={() => {
+                                <img className="img d-block w-100 show" alt="Github" src={Github} onClick={() => {
                                     window.open("https://github.com/Gerardo-cmd", "_blank");
                                 }}></img>
                             </div>
@@ -31,7 +31,7 @@ let ContactPage = () => {
                                 <a target="_blank" className="link" href="https://www.linkedin.com/in/gerardo-abaunza-abaaa0170/">LinkedIn</a>
                                 <br />
                                 <br />
-                                <img className="img d-block w-100 show" src={LinkedIn} onClick={() => {
+                                <img className="img d-block w-100 show" alt="LinkedIn" src={LinkedIn} onClick={() => {
                                     window.open("https://www.linkedin.com/in/gerardo-abaunza-abaaa0170/", "_blank");
                                 }}></img>
                             </div>
@@ -40,7 +40,7 @@ let ContactPage = () => {
                                 <a target="_blank" className="link" href="https://app.joinhandshake.com/users/12808784">Handshake</a>
                                 <br />
                                 <br />
-                                <img className="img d-block w-100 show" src={Handshake} onClick={() => {
+                                <img className="img d-block w-100 show" alt="Handshake" src={Handshake} onClick={() => {
                                     window.open("https://app.joinhandshake.com/users/12808784", "_blank");
                                 }}></img>
                             </div>

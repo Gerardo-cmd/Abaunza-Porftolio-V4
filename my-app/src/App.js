@@ -12,6 +12,7 @@ import ProjectPage from './pages/Projects/ProjectsPage.js';
 import HistoryPage from './pages/History/HistoryPage.js';
 import ContactPage from './pages/Contact/ContactPage.js';
 import SkillsPage from './pages/Skills/SkillsPage.js';
+import WorkExperiencePage from './pages/WorkExperience/WorkExperiencePage.js';
 import CoursesPage from './pages/Courses/CoursesPage.js';
 import NotFoundPage from './pages/NotFound/NotFoundPage.js';
 
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/contact" component={ContactPage} />
           <Route exact path="/skills" component={SkillsPage} />
           <Route exact path="/courses" component={CoursesPage} />
+          <Route exact path="/workExperience" component={WorkExperiencePage} />
           <Route path="*" component={NotFoundPage} />
         </Switch>
       </Router>

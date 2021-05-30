@@ -2,39 +2,75 @@ import React, {useState}  from 'react';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 
-let Navbar = ({key}) => {   
-    let homeKey = "";
+let Navbar = ({location}) => {   
+    let homeKey = "false";
+    let aboutKey = "false";
+    let projectsKey = "false";
+    let historyKey = "false";
+    let experienceKey = "false";
+    let skillsKey = "false";
+    let coursesKey = "false";
+    let workExperienceKey = "false";
+    let contactKey = "false";
+
+    if (location == "home") {
+        homeKey = "true"
+    }
+    else if (location == "about") {
+        aboutKey = "true"
+    }
+    else if (location == "projects") {
+        projectsKey = "true"
+    }
+    else if (location == "history") {
+        historyKey = "true"
+    }
+    else if (location == "skills") {
+        experienceKey = "true"
+        skillsKey = "about"
+    }
+    else if (location == "courses") {
+        experienceKey = "true"
+        coursesKey = "about"
+    }
+    else if (location == "workExperience") {
+        experienceKey = "true"
+        workExperienceKey = "about"
+    }
+    else if (location == "contact") {
+        contactKey = "true"
+    }
     return (
-        <Nav variant="pills" activeKey="1" >
+        <Nav variant="pills" activeKey="true" >
             <Nav.Item>
-                <Nav.Link eventKey="1" href="/">
+                <Nav.Link eventKey={homeKey} href="/">
                 Home
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="1" href="/about">
+                <Nav.Link eventKey={aboutKey} href="/about">
                 About
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="1" href="/projects" >
+                <Nav.Link eventKey={projectsKey} href="/projects" >
                 Projects
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="1" href="/history">
+                <Nav.Link eventKey={historyKey} href="/history">
                 History
                 </Nav.Link>
             </Nav.Item>
-            <NavDropdown title="Experience" eventKey="1" id="nav-dropdown">
-                <NavDropdown.Item href="/skills">Skills</NavDropdown.Item>
-                <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
-                <NavDropdown.Item href="/experience">Work Experience</NavDropdown.Item>
+            <NavDropdown title="Experience" eventKey={experienceKey} id="nav-dropdown">
+                <NavDropdown.Item eventKey={skillsKey} href="/skills">Skills</NavDropdown.Item>
+                <NavDropdown.Item eventKey={coursesKey} href="/courses">Courses</NavDropdown.Item>
+                <NavDropdown.Item eventKey={workExperienceKey} href="/workExperience">Work Experience</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>Separated link</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
-                <Nav.Link eventKey="1" href="/contact" >Contact
+                <Nav.Link eventKey={contactKey} href="/contact" >Contact
                 </Nav.Link>
             </Nav.Item>
         </Nav>

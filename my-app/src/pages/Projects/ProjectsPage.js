@@ -13,7 +13,6 @@ let ProjectsPage = () => {
             <div>
                 <NavBar location="projects"/>
                 <div className="container" id="main-content">
-                    <div className="container">
                         <h1>Here are some of my projects</h1>
                         <br />
                         <div className="row" id = "Hangman">
@@ -28,9 +27,7 @@ let ProjectsPage = () => {
                                     If the user makes an incorrect guess then the number of guesses the user has left will decrease by one.
                                     The user wins the game by either figuring out the word within the alloted number of guesses or fails the game by running out 
                                     of guesses without guessing the words. If the user types in a letter that has already been guessed, then nothing will happen. Please note that this app is not mobile friendly.
-                                    <a onClick={() => {
-                                        window.open("https://gerardo-hangman.netlify.app/", "_blank");
-                                    }}>Click here to visit the Hangman App</a>
+                                    <a href="https://gerardo-hangman.netlify.app/" target="_blank" rel="noreferrer" >Click here to visit the Hangman App</a>
                                 </p>
                             </div>
                         </div>
@@ -44,9 +41,7 @@ let ProjectsPage = () => {
                                     a matching title. The user will also be told how many todos are left based on how many unfinished 
                                     (unchecked) todos exist.
                                     There is also an option to only display the incompleted todos.
-                                    <a onClick={() => {
-                                        window.open("https://gerardo-todos.netlify.app/", "_blank");
-                                    }}>Click here to visit the Todo App</a>
+                                    <a href="https://gerardo-todos.netlify.app/" target="_blank" rel="noreferrer">Click here to visit the Todo App</a>
                                 </p>
                             </div>
                             <div className="col-sm">
@@ -63,9 +58,7 @@ let ProjectsPage = () => {
                                 <h2>Notes App</h2>
                                 <p>This application allows the user to take notes and save them via their local storage. The notes can be sorted either 
                                     alphabetically, by last edited, or by last created. Additionally, the notes can be searched by their title by using the filter notes search bar.
-                                    <a onClick={() => {
-                                        window.open("https://gerardo-notes.netlify.app/", "_blank");
-                                    }}>Click here to visit the Notes App</a>
+                                    <a href="https://gerardo-notes.netlify.app/" target="_blank" rel="noreferrer">Click here to visit the Notes App</a>
                                 </p>
                             </div>
                         </div>
@@ -78,9 +71,7 @@ let ProjectsPage = () => {
                                     This application allows the user to input any location and recieve the current forecast for that location!
                                     It will include the temperature it is outside, what temperature it feels like, the humidity, and the visibility.
                                     It accomplishes this by using two APIs, which are linked to in the Weather App's About page.
-                                    <a onClick={() => {
-                                        window.open("https://abaunza-weather-application.herokuapp.com/", "_blank");
-                                    }}>Click here to visit the Weather App</a>
+                                    <a href="https://abaunza-weather-application.herokuapp.com/" target="_blank" rel="noreferrer">Click here to visit the Weather App</a>
                                 </p>
                             </div>
                             <div className="col-lg">
@@ -97,20 +88,17 @@ let ProjectsPage = () => {
                                 <h2>Recipe App</h2>
                                 <p>
                                     This was actually a collaboration between another friend and I on github! 
-                                    <a target="_blank" href="https://github.com/JoshuaLamke/RecipeApp">Click here to visit the github repository for this app!</a>
+                                    <a target="_blank" href="https://github.com/JoshuaLamke/RecipeApp" rel="noreferrer">Click here to visit the github repository for this app!</a>
                                 </p>
                                 <p>
                                     Users must sign up and create an account by inserting their name, email, and creating a new password.
                                     This application allows the user to save their own recipes as well as edit them and delete them.
                                     Users are also able to sort their recipe by type (which is the default sorting method), alphabetically, and by last created.
                                     The database is on Heroku so logging in will take a bit of time but afterwards everything will work normally.
-                                    <a onClick={() => {
-                                        window.open("https://recipe-app-jg.netlify.app/", "_blank");
-                                    }}>Click here to visit the Recipe App</a>
+                                    <a href="https://recipe-app-jg.netlify.app/" target="_blank" rel="noreferrer">Click here to visit the Recipe App</a>
                                 </p>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>

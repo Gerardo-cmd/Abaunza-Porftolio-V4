@@ -18,7 +18,7 @@ let ProjectsPage = () => {
                         <br />
                         <div className="row" id = "Hangman">
                             <div className="col-lg">
-                                <img className="project d-block w-75 show" src={hangman} alt="hangman" />
+                                <img className="project d-block w-100 show" src={hangman} alt="hangman" />
                             </div>
                             <div className="col-lg">
                                 <h2>Hangman App</h2>
@@ -50,14 +50,14 @@ let ProjectsPage = () => {
                                 </p>
                             </div>
                             <div className="col-sm">
-                                <img className="project d-block w-75 show" src={todo} alt="todo"></img>
+                                <img className="project d-block w-100 show" src={todo} alt="todo"></img>
                             </div>
                         </div>
                         <br />
                         <br />
                         <div className="row" id = "Notes App">
                             <div className="col-lg">
-                                <img className="project d-block w-75 show" src={notes} alt="notes"></img>
+                                <img className="project d-block w-100 show" src={notes} alt="notes"></img>
                             </div>
                             <div className="col-lg">
                                 <h2>Notes App</h2>
@@ -84,14 +84,14 @@ let ProjectsPage = () => {
                                 </p>
                             </div>
                             <div className="col-lg">
-                                <img className="project d-block w-75 show" src={weather} alt="weather"></img>
+                                <img className="project d-block w-100 show" src={weather} alt="weather"></img>
                             </div>
                         </div>
                         <br />
                         <br />
                         <div className="row" id = "Recipe App">
                             <div className="col-lg">
-                                <img className="project d-block w-75 show" src={recipe} alt="recipe"></img>
+                                <img className="project d-block w-100 show" src={recipe} alt="recipe"></img>
                             </div>
                             <div className="col-lg">
                                 <h2>Recipe App</h2>

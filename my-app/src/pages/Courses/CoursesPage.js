@@ -9,7 +9,7 @@ let CoursesPage = () => {
                 <div className="container" id="main-content">
                     <div className="container">
                         <div className="row">
-                            <h2 className="d-flex justify-content-center">Computer Science courses I have taken at George Mason</h2>
+                            <h1 className="d-flex justify-content-center">Computer Science courses I have taken at George Mason</h1>
                             <div className="d-flex justify-content-center col">
                                 <ul>
                                     <br />

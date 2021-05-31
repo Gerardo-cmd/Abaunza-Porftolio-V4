@@ -13,59 +13,64 @@ let Navbar = ({location}) => {
     let workExperienceKey = "false";
     let contactKey = "false";
 
-    if (location == "home") {
+    if (location === "home") {
         homeKey = "true"
     }
-    else if (location == "about") {
+    else if (location === "about") {
         aboutKey = "true"
     }
-    else if (location == "projects") {
+    else if (location === "projects") {
         projectsKey = "true"
     }
-    else if (location == "history") {
+    else if (location === "history") {
         historyKey = "true"
     }
-    else if (location == "skills") {
+    else if (location === "skills") {
         experienceKey = "true"
         skillsKey = "about"
     }
-    else if (location == "courses") {
+    else if (location === "courses") {
         experienceKey = "true"
         coursesKey = "about"
     }
-    else if (location == "workExperience") {
+    else if (location === "workExperience") {
         experienceKey = "true"
         workExperienceKey = "about"
     }
-    else if (location == "contact") {
+    else if (location === "contact") {
         contactKey = "true"
     }
     return (
         <Nav variant="pills" activeKey="true" >
             <Nav.Item>
-                <Nav.Link eventKey={homeKey} href="/">
+                <Nav.Link target="_blank" className="navbar-brand" rel="noreferrer" href="/">
+                    Gerardo Abaunza
+                </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey={homeKey} target="_blank" rel="noreferrer" href="/">
                 Home
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey={aboutKey} href="/about">
+                <Nav.Link eventKey={aboutKey} target="_blank" rel="noreferrer" href="/about">
                 About
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey={projectsKey} href="/projects" >
+                <Nav.Link eventKey={projectsKey} target="_blank" rel="noreferrer" href="/projects" >
                 Projects
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey={historyKey} href="/history">
+                <Nav.Link eventKey={historyKey} target="_blank" rel="noreferrer" href="/history">
                 History
                 </Nav.Link>
             </Nav.Item>
             <NavDropdown title="Experience" eventKey={experienceKey} id="nav-dropdown">
-                <NavDropdown.Item eventKey={skillsKey} href="/skills">Skills</NavDropdown.Item>
-                <NavDropdown.Item eventKey={coursesKey} href="/courses">Courses</NavDropdown.Item>
-                <NavDropdown.Item eventKey={workExperienceKey} href="/workExperience">Work Experience</NavDropdown.Item>
+                <NavDropdown.Item eventKey={skillsKey} target="_blank" rel="noreferrer" href="/skills">Skills</NavDropdown.Item>
+                <NavDropdown.Item eventKey={coursesKey} target="_blank" rel="noreferrer" href="/courses">Courses</NavDropdown.Item>
+                <NavDropdown.Item eventKey={workExperienceKey} target="_blank" rel="noreferrer" href="/workExperience">Work Experience</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>Separated link</NavDropdown.Item>
             </NavDropdown>

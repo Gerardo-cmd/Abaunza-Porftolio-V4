@@ -1,4 +1,5 @@
 import React from 'react'
+import Sparkle from 'react-sparkle';
 import './AboutPage.css';
 import NavBar from '../../components/NavBar/NavBar.js';
 import profilePic from './profile.jpg';
@@ -8,6 +9,7 @@ let AboutPage = () => {
             <div>
                 <NavBar location="about"/>
                 <div className="container" id="main-content">
+                    <Sparkle count={10} fadeOutSpeed={5} overflowPx={0}/>
                     <div className="row">
                         <div className="col-lg">
                             <h2>Computer Science Background</h2>

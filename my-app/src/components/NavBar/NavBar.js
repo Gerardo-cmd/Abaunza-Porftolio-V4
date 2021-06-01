@@ -76,7 +76,7 @@ let NavBar = () => {
                             setRedirectCourses(false);
                             setRedirectWorkExperience(false);
                         }}>Skills</NavDropdown.Item>
-                        <NavDropdown.Item href="./courses" onClick={(e) => {
+                        <NavDropdown.Item onClick={(e) => {
                             e.preventDefault();
                             setRedirectHome(false);
                             setRedirectContact(false);

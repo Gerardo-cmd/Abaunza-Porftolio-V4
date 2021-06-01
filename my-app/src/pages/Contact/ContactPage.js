@@ -1,4 +1,5 @@
 import React from 'react'
+import Sparkle from 'react-sparkle';
 import './ContactPage.css';
 import NavBar from '../../components/NavBar/NavBar.js';
 import Github from './img_github.png';
@@ -13,9 +14,9 @@ let ContactPage = () => {
     return (
         <div className="row" id="page">
             <div>
-                <NavBar location="contact"/>
+                <NavBar />
                 <div className="container" id="main-content">
-
+                    <Sparkle count={10} fadeOutSpeed={5} overflowPx={0}/>
                     <h1>Connect with me</h1>
                     <h4>Click on one of the websites below to visit it</h4>
                     <br />

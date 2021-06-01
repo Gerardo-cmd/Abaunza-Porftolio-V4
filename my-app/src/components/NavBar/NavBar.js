@@ -20,7 +20,7 @@ let NavBar = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/" onClick={(e) => {
+                    <Nav.Link onClick={(e) => {
                         e.preventDefault();
                         setRedirectHome(true);
                         setRedirectContact(false);
@@ -31,7 +31,7 @@ let NavBar = () => {
                         setRedirectCourses(false);
                         setRedirectWorkExperience(false);
                     }}>Home</Nav.Link>
-                    <Nav.Link href="/about" onClick={(e) => {
+                    <Nav.Link onClick={(e) => {
                         e.preventDefault();
                         setRedirectHome(false);
                         setRedirectContact(false);
@@ -42,7 +42,7 @@ let NavBar = () => {
                         setRedirectCourses(false);
                         setRedirectWorkExperience(false);
                     }}>About</Nav.Link>
-                    <Nav.Link href="/projects" onClick={(e) => {
+                    <Nav.Link onClick={(e) => {
                         e.preventDefault();
                         setRedirectHome(false);
                         setRedirectContact(false);
@@ -53,7 +53,7 @@ let NavBar = () => {
                         setRedirectCourses(false);
                         setRedirectWorkExperience(false);
                     }}>Projects</Nav.Link>
-                    <Nav.Link href="/history" onClick={(e) => {
+                    <Nav.Link onClick={(e) => {
                         e.preventDefault();
                         setRedirectHome(false);
                         setRedirectContact(false);
@@ -65,7 +65,7 @@ let NavBar = () => {
                         setRedirectWorkExperience(false);
                     }}>History</Nav.Link>
                     <NavDropdown title="Experience" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="./skills" onClick={(e) => {
+                        <NavDropdown.Item onClick={(e) => {
                             e.preventDefault();
                             setRedirectHome(false);
                             setRedirectContact(false);
@@ -87,7 +87,7 @@ let NavBar = () => {
                             setRedirectCourses(true);
                             setRedirectWorkExperience(false);
                         }}>Courses</NavDropdown.Item>
-                        <NavDropdown.Item href="./workExperience" onClick={(e) => {
+                        <NavDropdown.Item onClick={(e) => {
                             e.preventDefault();
                             setRedirectHome(false);
                             setRedirectContact(false);
@@ -100,9 +100,17 @@ let NavBar = () => {
                         }}>Work Experience</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
-                <Nav className="right">
-                    <Nav.Link href="./contact">Contact</Nav.Link>
-                </Nav>
+                <Nav.Link onClick={(e) => {
+                    e.preventDefault();
+                    setRedirectHome(false);
+                    setRedirectContact(true);
+                    setRedirectProjects(false);
+                    setRedirectAbout(false);
+                    setRedirectHistory(false);
+                    setRedirectSkills(false);
+                    setRedirectCourses(false);
+                    setRedirectWorkExperience(false);
+                }}>Contact</Nav.Link>
             </Navbar.Collapse>
             {redirectHome ? <Redirect to="/" /> : ''}
             {redirectContact ? <Redirect to='/contact' /> : ''}

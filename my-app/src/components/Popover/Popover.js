@@ -15,7 +15,7 @@ let Example = ({direction}) => {
     
     return (
         <OverlayTrigger trigger="click" placement={direction} overlay={popover}>
-            <Button variant="success" style={{fontWeight: 'bold'}}>?</Button>
+            <Button variant="info" style={{fontWeight: 'bold'}}>?</Button>
         </OverlayTrigger>
     )
 }

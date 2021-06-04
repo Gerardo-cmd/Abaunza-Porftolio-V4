@@ -1,8 +1,8 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 #main-content {
     margin-top: 0.5rem;
@@ -12,8 +12,8 @@
     min-height: 100vh;
 }
 
-#title {
-    width: 50%;
+.text-center {
+    text-align: center;
     display: flex;
     position: relative;
     align-items: center;
@@ -21,7 +21,6 @@
 }
 
 .fade-in-text {
-    display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     animation: fadeIn linear 3s;
@@ -29,6 +28,16 @@
     -moz-animation: fadeIn linear 3s;
     -o-animation: fadeIn linear 3s;
     -ms-animation: fadeIn linear 3s;
+}
+
+.fade-in-second {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    animation: fadeIn2 linear 6s;
+    -webkit-animation: fadeIn2 linear 7s;
+    -moz-animation: fadeIn2 linear 7s;
+    -o-animation: fadeIn2 linear 7s;
+    -ms-animation: fadeIn2 linear 7s;
 }
 
 @keyframes fadeIn {
@@ -58,5 +67,37 @@
 @-ms-keyframes fadeIn {
     0% {opacity:0;}
     20% {opacity: 0;}
+    100% {opacity:1;}
+}
+
+
+
+@keyframes fadeIn2 {
+    0% {opacity:0;}
+    30% {opacity: 0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn2 {
+    0% {opacity:0;}
+    30% {opacity: 0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn2 {
+    0% {opacity:0;}
+    30% {opacity: 0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn2 {
+    0% {opacity:0;}
+    30% {opacity: 0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn2 {
+    0% {opacity:0;}
+    30% {opacity: 0;}
     100% {opacity:1;}
 }

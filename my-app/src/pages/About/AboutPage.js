@@ -17,10 +17,10 @@ let AboutPage = () => {
                             I am a rising senior Computer Science student at George Mason University. 
                             It is there that I learned Java, Python, and C as well as various other topics such as agile methods, reading assembly, data structures, 
                             database concepts, and formal methods and logic. 
-                            Additionally, I am self taught in Javascript, HTML, CSS, Node.js, and am currently learning React. I have coded for over three years now and love the challenge. 
-                            I currently reside in Centreville, Virginia and am currently looking to intern remotely or anywhere in the Northern Virginia and DC Metropolitan Area 
-                            as a front-end developer, back-end developer, 
-                            or software engineer!
+                            Additionally, I am self taught in Javascript, HTML, CSS, Node.js, and am currently learning React. I 
+                            have coded for over three years now and love the challenge. I currently reside in Centreville, Virginia
+                             and am currently looking to work remotely or anywhere in the Northern Virginia and DC Metropolitan Area 
+                             as a front-end developer, back-end developer, or software engineer!
                             </p>
                             <br />
                             <br />

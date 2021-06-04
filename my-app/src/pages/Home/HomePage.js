@@ -8,8 +8,15 @@ let HomePage = () => {
             <div>
                 <NavBar location="home"/>
                 <div className="d-flex justify-content-center fade-in-text text-center" id="main-content">
-                    <Sparkle count={10} fadeOutSpeed={5} overflowPx={0}/>
-                    <h1 id="title" style={{fontWeight: 'bold', fontFamily: "monospace"}}>Gerardo Abaunza</h1>
+                    <Sparkle count={12} fadeOutSpeed={5} overflowPx={0}/>
+                    <div className="container">
+                        <div className="row fade-in-text">
+                            <h1 style={{fontWeight: 'bold', fontFamily: "monospace"}} className="display-4">Gerardo Abaunza</h1>
+                        </div>
+                        <div className="row fade-in-second">
+                            <p style={{ fontFamily: "monospace"}} className="lead">Creative | Analytical | Learner</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

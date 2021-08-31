@@ -14,6 +14,7 @@ import nodeLogo from './nodeLogo.jpg';
 import reactLogo from './reactLogoNew.png';
 import javaLogo from './javaLogo.png';
 import sqlLogo from './sqlLogo.jpg';
+import jestLogo from './jestLogo.jpg';
 
 let SkillsPage = () => {
     return (
@@ -144,7 +145,7 @@ let SkillsPage = () => {
                                 <p>
                                 While I learned Github at the same time as Java in college, I didn't 
                                 really put it into practice and gain more experience with it until developing my first web applications.
-                                In fact, I didn't get familiar with Git until after using Github to hold my first few web applications.
+                                In fact, I didn't get familiar with Git until using Github to hold my first few web applications.
                                 </p>
                             </div>
                         </div>
@@ -162,11 +163,14 @@ let SkillsPage = () => {
                         <div className="col-12 col-sm-6 col-md-4 py-2">
                             <div className="d-flex flex-column align-items-center">
                                 <img src={reactLogo} alt="" style={{width: "75px",height: "75px", borderRadius: "50%"}} />
-                                <h4>8. React</h4>
+                                <h4>8. React/Typescript</h4>
                                 <p>
-                                React is one of my newer languages. I admire how it improves
+                                React is one of my newer languages (Technically, it's a framework). I admire how it improves
                                 reusability with its component architecture. This portfolio was made 
                                 using react and is one of my first defaults when developing web applications!
+                                Additionally, I started to use Typescript in my projects. I see it as a better version 
+                                of Javascript as it includes static typing which can help prevent some bugs. 
+                                I'm even redoing some of my earlier projects to improve them!
                                 </p>
                             </div>
                         </div>
@@ -193,6 +197,18 @@ let SkillsPage = () => {
                                 (and had the privilege to) learn this at my first internship as it was the main 
                                 language they used besides React. While I have no personal projects made from Ruby 
                                 on Rails, I will be sure to make some and add them in the future!
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-12 col-sm-6 col-md-4 py-2">
+                            <div className="d-flex flex-column align-items-center">
+                                <br />
+                                <img src={jestLogo} alt="" style={{width: "75px",height: "75px", borderRadius: "50%"}}/>
+                                <h4>11. Jest/Rspec</h4>
+                                <p>
+                                This is the most recent testing framework I picked up. I started to fiddle with unit 
+                                and integration testing during my internship. I have experience with both Jest and Rspec 
+                                but I personally prefer working with Jest.
                                 </p>
                             </div>
                         </div>

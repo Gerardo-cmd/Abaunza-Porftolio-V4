@@ -14,13 +14,13 @@ let AboutPage = () => {
                         <div className="col-lg">
                             <h2>Computer Science Background</h2>
                             <p>
-                            I am a rising senior Computer Science student at George Mason University. 
+                            I am a senior Computer Science student at George Mason University. 
                             It is there that I learned Java, Python, and C as well as various other topics such as agile methods, reading assembly, data structures, 
-                            database concepts, and formal methods and logic. 
-                            Additionally, I am self taught in Javascript, HTML, CSS, Node.js, and am currently learning React. I 
-                            have coded for over three years now and love the challenge. I currently reside in Centreville, Virginia
-                             and am currently looking to work remotely or anywhere in the Northern Virginia and DC Metropolitan Area 
-                             as a front-end developer, back-end developer, or software engineer!
+                            database concepts, and formal methods and logic. It really elped me establish the fundamentals of programming in general.
+                            Additionally, I am self taught in front-end and back-end development tools such as Javascript/Typescript, CSS, Node.js, React, and many more!  I 
+                            have coded for over three years now and love the challenge. I currently reside in Centreville, Virginia 
+                            and am currently looking to work remotely or anywhere in the Northern Virginia and DC Metropolitan Area 
+                            as a front-end developer, back-end developer, or software engineer!
                             </p>
                             <br />
                             <br />
@@ -28,12 +28,11 @@ let AboutPage = () => {
                             <p>
                             While I have studied a copious amount of things at George Mason University, a good portion of my skills have been from learning independently.
                             This includes most of the skills needed for web design. In my personal time, I taught myself through online resources and 
-                            by working on personal projects, which are the ones you can view on this portfolio.
-                            Some of my school projects are also on Github. I started by learning Javascript, HTML, and CSS. Once I got comfortable with those languages, 
-                            I moved on to back-end development with Node.js. 
+                            by working on personal projects, which are the ones you can view on this portfolio. 
+                            I started by learning Javascript, HTML, and CSS. Once I got comfortable with those languages, 
+                            I moved on to back-end development with Node.js/Express and then to frameworks for front-end and unit testing.
                             This is when my projects started to kick it up a notch. I even collaborated with a friend to work on a recipe app together. 
-                            Lastly, I'm picking up the framework, React. 
-                            In fact, this portfolio was made using React!
+                            I'm always learning new things, both in and out of school as I'm eager to learn as much as I can.
                             </p>
                         </div>
                         <div className="col-lg">

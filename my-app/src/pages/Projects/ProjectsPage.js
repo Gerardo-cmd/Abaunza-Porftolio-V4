@@ -7,6 +7,7 @@ import todo from './todo.png';
 import notes from './notes.png';
 import weather from './weather.png';
 import recipe from './recipe.png';
+import charity from './charity.png';
 
 let ProjectsPage = () => {
     return (
@@ -99,6 +100,23 @@ let ProjectsPage = () => {
                                 The database is on Heroku so logging in will take a bit of time but afterwards everything will work normally.
                                 <a href="https://recipe-app-jg.netlify.app/" target="_blank" rel="noreferrer">Click here to visit the Recipe App</a>
                             </p>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <div className="row" id = "Charity Microservice">
+                        <div className="col-lg">
+                            <h2>Charity Microservice</h2>
+                            <p>
+                                Users can use this api via postman, insomnia, or in their backend to get charities and save their favorites.
+                                This microservice has the documentation for all of the endpoints.
+                                Users are also able to sort charities by category or search them by ein.
+                                The microservice is hosted on Heroku.
+                                <a href="https://gerardo-abaunza-swe432-hw2.herokuapp.com/" target="_blank" rel="noreferrer">Click here to visit the Charity Microservice.</a>
+                            </p>
+                        </div>
+                        <div className="col-lg">
+                            <img className="project d-block w-100 show" src={charity} alt="charity"></img>
                         </div>
                     </div>
                 </div>

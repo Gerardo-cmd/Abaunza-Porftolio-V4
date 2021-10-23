@@ -178,12 +178,12 @@ let SkillsPage = () => {
                             <div className="d-flex flex-column align-items-center">
                                 <br />
                                 <img src={sqlLogo} alt="" style={{width: "75px",height: "75px", borderRadius: "50%"}} />
-                                <h4>9. SQL</h4>
+                                <h4>9. Databases</h4>
                                 <p>
                                 SQL is a database programming language that I learned during one of my courses 
-                                at George Mason University. On top of that, I also used MongoDB. While I am 
-                                familiar with these languages now and can incorporate them into my projects,
-                                I'm mostly just happy that I can look at SQL queries and now actually understand what they mean.
+                                at George Mason University. On top of that, I also used MongoDBand Firebase. I am happy to be
+                                familiar with these languages now as I can look at SQL queries and now actually understand what they mean. 
+                                If I had to pick a database that I use most frequently, it would be firebase.
                                 </p>
                             </div>
                         </div>
@@ -193,8 +193,7 @@ let SkillsPage = () => {
                                 <img src={rubyLogo} alt="" style={{width: "75px",height: "75px", borderRadius: "50%"}}/>
                                 <h4>10. Ruby on Rails</h4>
                                 <p>
-                                This is the most recent language/framework I picked up. I was required to 
-                                (and had the privilege to) learn this at my first internship as it was the main 
+                                I was required to (and had the privilege to) learn this at my first internship as it was the main 
                                 language they used besides React. While I have no personal projects made from Ruby 
                                 on Rails, I will be sure to make some and add them in the future!
                                 </p>
@@ -206,9 +205,9 @@ let SkillsPage = () => {
                                 <img src={jestLogo} alt="" style={{width: "75px",height: "75px", borderRadius: "50%"}}/>
                                 <h4>11. Jest/Rspec</h4>
                                 <p>
-                                This is the most recent testing framework I picked up. I started to fiddle with unit 
-                                and integration testing during my internship. I have experience with both Jest and Rspec 
-                                but I personally prefer working with Jest.
+                                I started to fiddle with unit and integration testing during my internship. I made 
+                                sure to practice (particularly with Jest) in my free time to get comfortable with unit and integration testing. 
+                                I have experience with both Jest and Rspec but I personally prefer working with Jest.
                                 </p>
                             </div>
                         </div>

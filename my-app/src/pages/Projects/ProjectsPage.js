@@ -114,7 +114,7 @@ let ProjectsPage = () => {
                                 It's purpose is to provide information to users about our solar system. 
                                 One can look at the moons or the planets in our solar system and learn more about them.
                                 Because this is hosted on heroku, it may take a while for the website to boot up when first visiting 
-                                it. <a href="https://gerardo-abaunza-swe432-hw3.herokuapp.com/" target="_blank" rel="noreferrer">Click here to visit the Charity Microservice.</a>
+                                it. <a href="https://gerardo-abaunza-swe432-hw3.herokuapp.com/" target="_blank" rel="noreferrer">Click here to visit the Solar System App</a>
                             </p>
                         </div>
                     </div>

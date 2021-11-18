@@ -15,11 +15,11 @@ let AboutPage = () => {
                             <h2>Computer Science Background</h2>
                             <p>
                             I am a senior Computer Science student at George Mason University. 
-                            It is there that I learned Java, Python, and C as well as various other topics such as agile methods, reading assembly, data structures, 
-                            database concepts, and formal methods and logic. It really elped me establish the fundamentals of programming in general.
-                            Additionally, I am self taught in front-end and back-end development tools such as Javascript/Typescript, CSS, Node.js, React, and many more!  I 
-                            have coded for over three years now and love the challenge. I currently reside in Centreville, Virginia 
-                            and am currently looking to work remotely or anywhere in the Northern Virginia and DC Metropolitan Area 
+                            It is there that I learned Java and C as well as various other topics such as agile methods, reading assembly, data structures, 
+                            database concepts, and formal methods and logic. It really helped me establish the fundamentals of programming in general.
+                            Additionally, I am self taught in front-end and back-end development tools such as Javascript/Typescript, CSS, Node.js, React, and many more!
+                            I currently reside in Centreville, Virginia 
+                            and am looking to work remotely or anywhere in the Northern Virginia and DC Metropolitan Area 
                             as a front-end developer, back-end developer, or software engineer!
                             </p>
                             <br />
